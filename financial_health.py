@@ -20,10 +20,10 @@ def assess_financial_health(income, expenses, savings, loans):
 
 # Example usage
 if __name__ == "__main__":
-    income = 50000
-    expenses = 30000
-    savings = 15000
-    loans = 10000
+    income = float(input("Enter monthly income: "))
+    expenses = float(input("Enter monthly expenses: "))
+    savings = float(input("Enter total savings: "))
+    loans = float(input("Enter total loan amount: "))
 
     result = assess_financial_health(income, expenses, savings, loans)
-    print(result)
+    print("Financial Health Status:", result)
